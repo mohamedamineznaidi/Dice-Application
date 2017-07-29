@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -25,12 +26,13 @@ public class TwoSide extends AppCompatActivity {
             public void onClick(View v) {
                 SecureRandom random = new SecureRandom();
                 int result = random.nextInt(2);
-                if (result==1)
+                Log.i("resut",""+result);
+                if (result==0)
                 {
                     Intent souri=new Intent(getApplication(),Souri.class);
                     startActivity(souri);
                 }
-                if (result==2)
+                if (result==1)
                 {
                     Intent arbi=new Intent(getApplication(),arbi.class);
                     startActivity(arbi);
