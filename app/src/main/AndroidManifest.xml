@@ -20,6 +20,7 @@
         <activity android:name=".Souri"></activity>
         <activity android:name=".arbi"></activity>
         <activity android:name=".SixSide"></activity>
+        <activity android:name=".SixSideResult"></activity>
     </application>
 
 </manifest>

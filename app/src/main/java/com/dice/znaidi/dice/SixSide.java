@@ -22,10 +22,10 @@ public class SixSide extends AppCompatActivity {
         sixresultBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SecureRandom random = new SecureRandom();
-                int result = random.nextInt(6) + 1;
-                Intent sixsideresult = new Intent(getApplication(),SixSide.class);
-                sixsideresult.putExtra("result",result);
+
+                Intent sixsideresult = new Intent(getApplication(),SixSideResult.class);
+                //sixsideresult.putExtra("result",result);
+                startActivity(sixsideresult);
             }
         });
            }
