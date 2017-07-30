@@ -6,27 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.dice.znaidi.dice.Menu">
 
-    <Button
-        android:id="@+id/sixsideBT"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:text="Chichbicha"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/dicebt"
+        android:layout_width="280dp"
+        android:layout_height="78dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/dicemenu"
+        app:layout_constraintBottom_toTopOf="@+id/sfbt"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_bias="0.439"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintHorizontal_bias="0.506" />
 
-    <Button
-        android:id="@+id/twosideBT"
-        android:layout_width="165dp"
-        android:layout_height="55dp"
-        android:text="Souri Wala 3arbi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+    <ImageButton
+        android:id="@+id/sfbt"
+        android:layout_width="279dp"
+        android:layout_height="76dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sixsideBT"
-        app:layout_constraintVertical_bias="0.439" />
+        app:srcCompat="@drawable/sfmenubt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dicebt" />
 
 </android.support.constraint.ConstraintLayout>

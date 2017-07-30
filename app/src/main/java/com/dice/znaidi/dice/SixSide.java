@@ -27,6 +27,7 @@ public class SixSide extends AppCompatActivity {
                 Intent sixsideresult = new Intent(getApplication(),SixSideResult.class);
                 //sixsideresult.putExtra("result",result);
                 startActivity(sixsideresult);
+
             }
         });
            }

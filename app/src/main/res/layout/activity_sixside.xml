@@ -40,12 +40,24 @@
             android:id="@+id/sixresultBT"
             android:layout_width="129dp"
             android:layout_height="74dp"
-            android:text="Button"
+            android:text="Roll It"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
             app:layout_constraintVertical_bias="0.46" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="309dp"
+            android:layout_height="85dp"
+            app:srcCompat="@drawable/dicemenu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintVertical_bias="0.596" />
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>
