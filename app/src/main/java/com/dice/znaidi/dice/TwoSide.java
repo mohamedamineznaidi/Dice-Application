@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.security.SecureRandom;
 
@@ -24,6 +25,7 @@ public class TwoSide extends AppCompatActivity {
         tworesultBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "I hope you are lucky :D ", Toast.LENGTH_SHORT).show();
                 SecureRandom random = new SecureRandom();
                 int result = random.nextInt(2);
                 Log.i("resut",""+result);

@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.security.SecureRandom;
 
@@ -22,7 +23,7 @@ public class SixSide extends AppCompatActivity {
         sixresultBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(getApplicationContext(), "I hope you are lucky", Toast.LENGTH_SHORT).show();
                 Intent sixsideresult = new Intent(getApplication(),SixSideResult.class);
                 //sixsideresult.putExtra("result",result);
                 startActivity(sixsideresult);
